@@ -51,7 +51,7 @@ const Topics = ({ match }) => (
 class Index extends React.Component {
     render() {
         return (
-            <Router basename="/admin">
+            <HashRouter basename="/admin/">
                 <div>
                     <ul>
                         <li><Link to="/">Home</Link></li>
@@ -65,7 +65,7 @@ class Index extends React.Component {
                     <Route path="/about" component={About}/>
                     <Route path="/topics" component={Topics}/>
                 </div>
-            </Router>
+            </HashRouter>
         )
     }
 }
