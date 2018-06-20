@@ -1,24 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Link, HashRouter} from 'react-router-dom'
 
 const Home = () => (
     <div>
         <h2>Home</h2>
     </div>
-)
+);
 
 const About = () => (
     <div>
         <h2>About</h2>
     </div>
-)
+);
 
 const Topic = ({ match }) => (
     <div>
         <h3>{match.params.topicId}</h3>
     </div>
-)
+);
 
 const Topics = ({ match }) => (
     <div>
@@ -46,7 +46,7 @@ const Topics = ({ match }) => (
             <h3>Please select a topic.</h3>
         )}/>
     </div>
-)
+);
 
 class Index extends React.Component {
     render() {
